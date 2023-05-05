@@ -1,6 +1,13 @@
 # Python program to demonstrate
 # single inheritance
 
+import jenkins
+
+server = jenkins.Jenkins('http://localhost:8080', username='entellio', password='Gk@991225')
+user = server.get_whoami()
+version = server.get_version()
+print('Hello %s from Jenkins %s' % (user['fullName'], version))
+
 # Base class
 class Parent:
 	def func1(self):
@@ -20,5 +27,5 @@ object = Child()
 object.func1()
 object.func2()
 
-sumant test git hub
+sumanth test git hub
 
