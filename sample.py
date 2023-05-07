@@ -18,4 +18,3 @@ object = Child()
 object.func1()
 object.func2()
 
-
